@@ -220,19 +220,8 @@ src/
      -H "Authorization: Bearer YOUR_JWT_TOKEN"
    ```
 
-### Using Postman
-
-1. Import the collection or create requests manually
-2. Set the base URL to `http://localhost:8080`
-3. For protected endpoints, add the JWT token in the Authorization header as `Bearer <token>`
-
 ## 🔧 Development
 
-### Running Tests
-
-```bash
-mvn test
-```
 
 ### Building for Production
 
@@ -240,41 +229,6 @@ mvn test
 mvn clean package -Pproduction
 ```
 
-## 🚨 Security Considerations
-
-- **Change JWT Secret**: Always use a strong, random JWT secret in production
-- **HTTPS**: Use HTTPS in production to protect tokens in transit
-- **Token Storage**: Store JWT tokens securely on the client side
-- **Password Policy**: Implement strong password requirements
-- **Rate Limiting**: Consider implementing rate limiting for auth endpoints
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Troubleshooting
-
-### Common Issues
-
-1. **Database Connection Error**: Ensure PostgreSQL is running and credentials are correct
-2. **JWT Token Invalid**: Check if the token has expired or the secret key is correct
-3. **Port Already in Use**: Change the port in `application.properties` or stop the conflicting service
-
-### Logs
-
-Check the console output for detailed error messages and stack traces.
-
-## 📞 Support
-
-If you encounter any issues or have questions, please open an issue in the repository.
 
 ---
 
